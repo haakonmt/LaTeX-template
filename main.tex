@@ -1,0 +1,31 @@
+\documentclass[abstract=on]{scrreprt}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% Edit the meta.tex file to change title, group number and author names
+\input{meta.tex}
+
+
+\begin{document}
+% The title page, edit if you want to customize it
+\input{title.tex}
+
+\tableofcontents
+
+% Bibliography - edit references.bib and use the \cite command in text
+\bibliographystyle{unsrt}
+\bibliography{references}
+\end{document}
