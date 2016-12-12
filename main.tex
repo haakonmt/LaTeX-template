@@ -5,8 +5,10 @@
 \usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{longtable}
-\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage[table,pdftex,dvipsnames]{xcolor}% http://ctan.org/pkg/xcolor
 \usepackage{hyperref}
+\usepackage{xargs}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -15,9 +17,11 @@
     urlcolor=black
 }
 
+% Custom commands
+\input{commands.tex}
+
 % Edit the meta.tex file to change title, group number and author names
 \input{meta.tex}
-
 
 \begin{document}
 % The title page, edit if you want to customize it
